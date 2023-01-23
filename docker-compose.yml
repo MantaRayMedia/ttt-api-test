@@ -14,7 +14,7 @@ services:
     links:
       - manta_php
     depends_on:
-      - manta_php
+      - manta_php 
   manta_php:
     build: ./.docker/php
     volumes:
