@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title> Tic Tac Toe</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"></link>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"/>
+	<link rel="stylesheet" href="components-rounded.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="index.js"></script>
+
+
+<body>
+ 
+<div class="modal hide fade" id="myModal">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Modal header</h3>
+    </div>
+    <div class="modal-body">
+        <p>One fine body…</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+        <a href="#" class="btn btn-primary">Save changes</a>
+    </div>
+</div> 
+<div class="container">  
+<div class="portlet">
+<div> <h1 class="portlet-title">  Tic Tac Toe <span class="hide" id="game_id"> </span></h1></div>
+
+
+
+<!--<div id="intro-screen" class="center">
+  <h3>Add Player 1:</h3>
+  <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Player1's name" aria-label="Player1's name" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <span class="input-group-text" id="basic-addon2"><i class="fa fa-2x fa-user" aria-hidden="true"></i></span>
+  </div>
+</div>-->
+
+
+<form class="needs-validation" novalidate="">
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">Player 1</label>
+      <input type="text" class="form-control" name="player_1" id="player_1" placeholder="Player 1" value="" required="true">
+      <div class="valid-feedback">
+          Player 1 complete!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02">Player2 </label>
+      <input type="text" class="form-control" name="player_2" id="player_2" placeholder="Player 2" value="" required="true">
+      <div class="valid-feedback">
+       Player 2 complete!
+      </div>
+    </div>
+      </div>
+ 
+  <button class="start btn btn-primary" type="button">Start Game</button>
+</form>
+
+
+	
+
+
+<div class="portlet">
+<div class="portlet-body">
+  
+<div id="game-holder"  class="row hide">
+  <div class="col-md-4" >
+<div class="messages" style="margin-top:35px"></div>
+<div class="turn" style="margin:35px"></div>
+</div>
+<div class="col-md-8">
+<table>
+  <tr>
+    <td class="item1"></td>
+    <td class="item2"></td>
+    <td class="item3"></td>
+  </tr>
+  <tr>
+    <td class="item4"></td>
+    <td class="item5"></td>
+    <td class="item6"></td>
+  </tr>
+  <tr>
+    <td class="item7"></td>
+    <td class="item8"></td>
+    <td class="item9"></td>
+  </tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="game-btns" class="row hide">
+  <div class="col-md-12">
+<br /><input class="reset" type="button" value="Reset" />
+<br /><input class="pause" type="button" value="Pause" />
+<div class="row">
+  <div class="col-md-12"></div>
+  
+</div>
+  
+  </div>
+</body>
+</html>
